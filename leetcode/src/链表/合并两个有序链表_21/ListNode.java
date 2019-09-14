@@ -1,9 +1,5 @@
 package 链表.合并两个有序链表_21;
 
-/**
- * @Author kim
- * @Date 2019/9/14 22:02
- */
 public class ListNode {
     int val;
     ListNode next;
