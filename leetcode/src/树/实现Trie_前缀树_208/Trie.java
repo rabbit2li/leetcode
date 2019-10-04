@@ -19,14 +19,12 @@ public class Trie {
     }
 
     private Node root; // 根节点
-    private int size; // 单词数量
 
     /**
      * Initialize your data structure here.
      */
     public Trie() {
         root = new Node();
-        size = 0;
     }
 
     /**
@@ -41,10 +39,7 @@ public class Trie {
             }
             cur = cur.next.get(c);
         }
-        if (!cur.isWord) {
-            cur.isWord = true;
-            size++;
-        }
+        cur.isWord = true;
     }
 
     /**
